@@ -15,6 +15,8 @@ export default () => (
                 average cricketer
                 <br />
                 software developer
+                <br />
+                Pluralsight guide author
             </h1>
         </div>
         <Footer />
