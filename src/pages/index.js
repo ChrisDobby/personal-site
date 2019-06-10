@@ -57,22 +57,21 @@ export default () => {
                         updated in real time in the match centre for anyone to
                         view. The application can run without an internet
                         connection (although live updates cannot be done with no
-                        connection) and can be installed onto devices. The
-                        source for the client is{" "}
+                        connection) and can be installed onto devices.{" "}
                         <a
                             href="https://github.com/chrisdobby/cricket-scorer"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            here
+                            The source for the client is here
                         </a>{" "}
-                        and for the api{" "}
+                        and{" "}
                         <a
                             href="https://github.com/chrisdobby/cricket-scores-live-api"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            here
+                            for the api here
                         </a>
                     </p>
                     <ul className="actions">
