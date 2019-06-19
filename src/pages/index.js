@@ -8,8 +8,15 @@ import cricket_scorer from "../assets/images/cricket-scorer.png";
 import guide_1 from "../assets/images/guide-1.png";
 import guide_2 from "../assets/images/guide-2.png";
 import guide_3 from "../assets/images/guide-3.png";
+import guide_4 from "../assets/images/guide-4.png";
 
 const GUIDES = [
+    {
+        img: guide_4,
+        url:
+            "https://www.pluralsight.com/guides/react-component-composition/",
+        description: "Component Composition in React",
+    },
     {
         img: guide_1,
         url:
