@@ -12,8 +12,16 @@ import guide_4 from "../assets/images/guide-4.png";
 import guide_5 from "../assets/images/guide-5.png";
 import guide_6 from "../assets/images/guide-6.png";
 import guide_7 from "../assets/images/guide-7.png";
+import guide_8 from "../assets/images/guide-8.png";
+import author from "../assets/images/author.png";
 
 const GUIDES = [
+    {
+        img: guide_8,
+        url:
+            "https://www.pluralsight.com/guides/drag-and-drop-react-components",
+        description: "Drag and Drop in React Components",
+    },
     {
         img: guide_7,
         url: "https://www.pluralsight.com/guides/using-react-refs-typescript",
@@ -30,11 +38,6 @@ const GUIDES = [
         description: "Component Composition in React",
     },
     {
-        img: guide_5,
-        url: "https://www.pluralsight.com/guides/react-todo-list-part-1/",
-        description: "React Todo List",
-    },
-    {
         img: guide_1,
         url:
             "https://www.pluralsight.com/guides/prop-changes-in-react-component",
@@ -45,6 +48,11 @@ const GUIDES = [
         url:
             "https://www.pluralsight.com/guides/higher-order-composition-typescript-react",
         description: "Higher Order Composition with Typescript for React",
+    },
+    {
+        img: guide_5,
+        url: "https://www.pluralsight.com/guides/react-todo-list-part-1/",
+        description: "React Todo List",
     },
     {
         img: guide_3,
@@ -62,6 +70,7 @@ export default () => {
             <Helmet>
                 <title>{siteTitle}</title>
                 <meta name="description" content={siteDescription} />
+                <script src="https://kit.fontawesome.com/40393b60d6.js" />
             </Helmet>
 
             <div id="main">
@@ -111,8 +120,29 @@ export default () => {
                 </section>
 
                 <section id="two">
-                    <header className="major">
-                        <h2>Pluralsight Guides</h2>
+                    <header className="major" style={{ paddingTop: "1em" }}>
+                        <div
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                marginBottom: "10px",
+                            }}
+                        >
+                            <a
+                                className="image thumb"
+                                href="https://app.pluralsight.com/profile/author/chris-dobsone"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{ marginRight: "30px" }}
+                            >
+                                <img
+                                    src={author}
+                                    alt="Pluralsight author profile"
+                                />
+                            </a>
+
+                            <h2>Pluralsight Guides</h2>
+                        </div>
                     </header>
                     <GuidesList guides={GUIDES} />
                 </section>

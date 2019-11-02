@@ -16,7 +16,7 @@ export default () => (
                 <br />
                 software developer
                 <br />
-                Pluralsight guide author
+                Pluralsight author
             </h1>
         </div>
         <Footer />
