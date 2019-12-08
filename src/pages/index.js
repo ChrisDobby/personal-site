@@ -77,6 +77,13 @@ export default () => {
             <Helmet>
                 <title>{siteTitle}</title>
                 <meta name="description" content={siteDescription} />
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:site" content="@chrisdobby" />
+                <meta name="twitter:creator" content="@chrisdobby" />
+                <meta
+                    name="twitter:image"
+                    content="https://pbs.twimg.com/profile_images/736468340894486528/HUHVlf_J_400x400.jpg"
+                />
                 <meta property="og:title" content={siteTitle} />
                 <meta property="og:url" content="https://chrisdobby.dev" />
                 <meta property="og:type" content="website" />
