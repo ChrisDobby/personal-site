@@ -70,13 +70,21 @@ const GUIDES = [
 
 export default () => {
     const siteTitle = "ChrisDobby.dev";
-    const siteDescription = "Proud Data, average cricket, software developer";
+    const siteDescription = "Proud Dad, average cricketer, software developer";
 
     return (
         <Layout>
             <Helmet>
                 <title>{siteTitle}</title>
                 <meta name="description" content={siteDescription} />
+                <meta property="og:title" content={siteTitle} />
+                <meta property="og:url" content="https://chrisdobby.dev" />
+                <meta property="og:type" content="website" />
+                <meta property="og:description" content={siteDescription} />
+                <meta
+                    property="og:image"
+                    content="https://pbs.twimg.com/profile_images/736468340894486528/HUHVlf_J_400x400.jpg"
+                />
                 <script src="https://kit.fontawesome.com/40393b60d6.js" />
             </Helmet>
 
