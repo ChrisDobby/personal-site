@@ -14,9 +14,16 @@ import guide_6 from "../assets/images/guide-6.png";
 import guide_7 from "../assets/images/guide-7.png";
 import guide_8 from "../assets/images/guide-8.png";
 import guide_9 from "../assets/images/guide-9.png";
+import guide_10 from "../assets/images/guide-10.png";
 import author from "../assets/images/author.png";
 
 const GUIDES = [
+    {
+        img: guide_10,
+        url:
+            "https://www.pluralsight.com/guides/code-splitting-in-a-react-application",
+        description: "Code Splitting in a React Application",
+    },
     {
         img: guide_8,
         url:
@@ -24,15 +31,15 @@ const GUIDES = [
         description: "Drag and Drop in React Components",
     },
     {
-        img: guide_7,
-        url: "https://www.pluralsight.com/guides/using-react-refs-typescript",
-        description: "Using React Refs in Typescript",
-    },
-    {
         img: guide_9,
         url:
             "https://www.pluralsight.com/guides/testing-asynchronous-functionality-react-component",
         description: "Testing Asynchronous Functionality in a React Component",
+    },
+    {
+        img: guide_7,
+        url: "https://www.pluralsight.com/guides/using-react-refs-typescript",
+        description: "Using React Refs in Typescript",
     },
     {
         img: guide_6,
