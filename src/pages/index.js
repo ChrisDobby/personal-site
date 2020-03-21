@@ -105,6 +105,71 @@ export default () => {
             <div id="main">
                 <section id="one">
                     <header className="major">
+                        <h2>React WebXR</h2>
+                    </header>
+                    <p>
+                        React WebXR is an attempt at creating{" "}
+                        <a
+                            href="https://reactjs.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            React
+                        </a>{" "}
+                        components implementing some of the{" "}
+                        <a
+                            href="https://www.w3.org/TR/webxr/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            WebXR Device API
+                        </a>{" "}
+                    </p>
+                    <ul className="actions">
+                        <li>
+                            <a
+                                href="https://github.com/chrisdobby/react-webxr"
+                                className="button"
+                            >
+                                <i
+                                    className="fab fa-github"
+                                    style={{ marginRight: "10px" }}
+                                />
+                                View on github
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="two">
+                    <header className="major" style={{ paddingTop: "1em" }}>
+                        <div
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                marginBottom: "10px",
+                            }}
+                        >
+                            <a
+                                className="image thumb"
+                                href="https://app.pluralsight.com/profile/author/chris-dobsone"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{ marginRight: "30px" }}
+                            >
+                                <img
+                                    src={author}
+                                    alt="Pluralsight author profile"
+                                />
+                            </a>
+
+                            <h2>Pluralsight Guides</h2>
+                        </div>
+                    </header>
+                    <GuidesList guides={GUIDES} />
+                </section>
+                <section id="three">
+                    <header className="major">
                         <h2>
                             <span className="image avatar">
                                 <img src={cricket_scorer} alt="" />
@@ -146,34 +211,6 @@ export default () => {
                             </a>
                         </li>
                     </ul>
-                </section>
-
-                <section id="two">
-                    <header className="major" style={{ paddingTop: "1em" }}>
-                        <div
-                            style={{
-                                display: "flex",
-                                alignItems: "center",
-                                marginBottom: "10px",
-                            }}
-                        >
-                            <a
-                                className="image thumb"
-                                href="https://app.pluralsight.com/profile/author/chris-dobsone"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                style={{ marginRight: "30px" }}
-                            >
-                                <img
-                                    src={author}
-                                    alt="Pluralsight author profile"
-                                />
-                            </a>
-
-                            <h2>Pluralsight Guides</h2>
-                        </div>
-                    </header>
-                    <GuidesList guides={GUIDES} />
                 </section>
             </div>
         </Layout>
